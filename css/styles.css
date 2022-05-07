@@ -107,6 +107,12 @@ li {
   margin: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /* header Шапка  */
 /* логотип */
 .header {
@@ -428,6 +434,10 @@ li {
 
   padding: 6px 22px;
 }
+.filters-button.active {
+  background-color: var(--background-color-button);
+  color: var(--color-button-one);
+}
 /* .button:current(.filters-button), */
 .filters-button:active,
 .filters-button:hover,
@@ -437,13 +447,17 @@ li {
 }
 
 .portfolio-list {
+  box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
-  margin: -15px;
+  /* margin: -15px; */
+  margin-left: -30px;
+  margin-top: -30px;
 }
 .portfolio-item {
   width: 370px;
-  margin: 15px;
+  margin-left: 30px;
+  margin-top: 30px;
 
   border: var(--color-border) solid 1px;
 }
@@ -481,5 +495,4 @@ li {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  /* outline: 2px dashed tomato; */
 }
